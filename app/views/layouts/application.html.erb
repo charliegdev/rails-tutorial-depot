@@ -25,6 +25,8 @@
           <li><a href="/news">News</a></li>
           <li><a href="/contact">Contact</a></li>
         </ul>
+
+        <%= Time.current.in_time_zone("Pacific Time (US & Canada)").strftime("%Y-%m-%d, %-I:%M %p") %>
       </nav>
 
       <main class="container mx-auto mt-4 px-5 flex">
