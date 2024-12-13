@@ -24,18 +24,18 @@
       <% @products.each do |product| %>
         <tr class="<%= cycle('bg-green-50', 'bg-white') %>">
           <td class="px-2 py-3">
-            <%= image_tag(product.image_url, class: 'w-40') %>
+            <%= image_tag(product.image_url, class: 'w-40 product-image') %>
           </td>
 
           <td>
-            <h1 class="text-xl font-bold mb-3"><%= product.title %></h1>
-            <p>
+            <h1 class="text-xl font-bold mb-3 title"><%= product.title %></h1>
+            <p class="description">
               <%= truncate(strip_tags(product.description), length: 80) %>
             </p>
           </td>
 
           <td class="px-3">
-            <ul>
+            <ul class="action-menu">
               <li>
                 <%= link_to 'Show', product, class: 'hover:underline' %>
               </li>
