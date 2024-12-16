@@ -5,6 +5,10 @@
     </p>
   <% end %>
 
+  <% window_shopping_times = session[:counter] %>
+  <% if window_shopping_times > 5 %>
+    <h1>You have window-shopped <%= pluralize(window_shopping_times, "time") %>.</h1>
+  <% end %>
   <h1 class="font-bold text-xl mb-6 pb-2 border-b-2">
     Your Prismatic Catalog
   </h1>
