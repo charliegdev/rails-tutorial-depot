@@ -61,6 +61,8 @@ group :development do
   gem "web-console"
 
   gem 'seed_dump'
+  gem 'annotate'
+
 
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
