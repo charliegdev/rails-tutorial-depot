@@ -3,6 +3,7 @@
 # Table name: line_items
 #
 #  id         :integer          not null, primary key
+#  price      :decimal(8, 2)    default(0.0)
 #  quantity   :integer          default(1)
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
