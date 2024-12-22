@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # == Schema Information
 #
 # Table name: carts
@@ -20,6 +22,6 @@ class Cart < ApplicationRecord
   end
 
   def total_price
-    line_items.sum { |item| item.total_price}
+    line_items.sum(&:total_price)
   end
 end
