@@ -41,6 +41,7 @@
     <orderEntry type="library" scope="PROVIDED" name="activesupport (v7.0.8.6, rbenv: 3.1.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="addressable (v2.8.7, rbenv: 3.1.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="annotate (v3.2.0, rbenv: 3.1.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ast (v2.4.2, rbenv: 3.1.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="base64 (v0.2.0, rbenv: 3.1.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bindex (v0.8.1, rbenv: 3.1.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bootsnap (v1.18.4, rbenv: 3.1.3) [gem]" level="application" />
@@ -58,6 +59,8 @@
     <orderEntry type="library" scope="PROVIDED" name="io-console (v0.8.0, rbenv: 3.1.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="irb (v1.14.1, rbenv: 3.1.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jbuilder (v2.13.0, rbenv: 3.1.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="json (v2.9.1, rbenv: 3.1.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="language_server-protocol (v3.17.0.3, rbenv: 3.1.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="logger (v1.6.2, rbenv: 3.1.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="loofah (v2.23.1, rbenv: 3.1.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.8.1, rbenv: 3.1.3) [gem]" level="application" />
@@ -73,6 +76,8 @@
     <orderEntry type="library" scope="PROVIDED" name="net-smtp (v0.5.0, rbenv: 3.1.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nio4r (v2.7.4, rbenv: 3.1.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.16.8, rbenv: 3.1.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="parallel (v1.26.3, rbenv: 3.1.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="parser (v3.3.6.0, rbenv: 3.1.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="psych (v5.2.1, rbenv: 3.1.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="public_suffix (v6.0.1, rbenv: 3.1.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="puma (v5.6.9, rbenv: 3.1.3) [gem]" level="application" />
@@ -83,11 +88,15 @@
     <orderEntry type="library" scope="PROVIDED" name="rails-dom-testing (v2.2.0, rbenv: 3.1.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails-html-sanitizer (v1.6.1, rbenv: 3.1.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="railties (v7.0.8.6, rbenv: 3.1.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rainbow (v3.1.1, rbenv: 3.1.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rake (v13.2.1, rbenv: 3.1.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rdoc (v6.8.1, rbenv: 3.1.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="regexp_parser (v2.9.3, rbenv: 3.1.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="reline (v0.5.12, rbenv: 3.1.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rexml (v3.3.9, rbenv: 3.1.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rubocop (v1.69.2, rbenv: 3.1.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rubocop-ast (v1.37.0, rbenv: 3.1.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ruby-progressbar (v1.13.0, rbenv: 3.1.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubyzip (v2.3.2, rbenv: 3.1.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="seed_dump (v3.3.1, rbenv: 3.1.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="selenium-webdriver (v4.27.0, rbenv: 3.1.3) [gem]" level="application" />
@@ -102,6 +111,8 @@
     <orderEntry type="library" scope="PROVIDED" name="timeout (v0.4.2, rbenv: 3.1.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="turbo-rails (v2.0.11, rbenv: 3.1.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v2.0.6, rbenv: 3.1.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="unicode-display_width (v3.1.2, rbenv: 3.1.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="unicode-emoji (v4.0.4, rbenv: 3.1.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="web-console (v4.2.1, rbenv: 3.1.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="websocket (v1.2.11, rbenv: 3.1.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="websocket-driver (v0.7.6, rbenv: 3.1.3) [gem]" level="application" />
@@ -118,6 +129,7 @@
       <list>
         <option value="active_record:application_record" />
         <option value="active_record:multi_db" />
+        <option value="annotate:install" />
         <option value="application_record" />
         <option value="benchmark" />
         <option value="channel" />
@@ -151,6 +163,7 @@
       <list>
         <option value="active_record:application_record" />
         <option value="active_record:multi_db" />
+        <option value="annotate:install" />
         <option value="application_record" />
         <option value="benchmark" />
         <option value="channel" />
