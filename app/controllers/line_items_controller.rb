@@ -53,10 +53,15 @@ class LineItemsController < ApplicationController
 
   # DELETE /line_items/1 or /line_items/1.json
   def destroy
+    # FIXME: Don't just destroy the line item; simply remove by 1
     @line_item.destroy
 
     respond_to do |format|
-      format.html { redirect_to line_items_path, status: :see_other, notice: 'Line item was successfully destroyed.' }
+      format.html do
+        redirect_to cart_path(session[:cart_id]),
+                    status: :see_other,
+                    notice: 'Item was successfully removed from the cart.'
+      end
       format.json { head :no_content }
     end
   end
