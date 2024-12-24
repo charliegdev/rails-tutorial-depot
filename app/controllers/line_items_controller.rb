@@ -53,7 +53,6 @@ class LineItemsController < ApplicationController
 
   # DELETE /line_items/1 or /line_items/1.json
   def destroy
-    # FIXME: Don't just destroy the line item; simply remove by 1
     @line_item.destroy
 
     respond_to do |format|
