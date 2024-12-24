@@ -12,7 +12,7 @@ class CartsController < ApplicationController
 
   # GET /carts/1 or /carts/1.json
   def show
-    invalid_cart if session[:cart_id] != params[:id]
+    invalid_cart if session[:cart_id].to_s != params[:id]
   end
 
   # GET /carts/new
