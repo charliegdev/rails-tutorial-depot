@@ -12,16 +12,6 @@
         <td class="text-right font-bold">
           <%= number_to_currency(line_item.total_price) %>
         </td>
-        <td>
-          <%= button_to "X",
-                        line_item_path(line_item),
-                        method: 'delete',
-                        class: 'mx-10 text-red-600',
-                        data: {
-                          confirm: 'Remove this item from cart?'
-                        }
-          %>
-        </td>
       </tr>
     <% end %>
 
