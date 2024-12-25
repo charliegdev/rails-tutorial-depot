@@ -57,7 +57,7 @@ class LineItemsController < ApplicationController
 
     respond_to do |format|
       format.html do
-        redirect_to cart_path(session[:cart_id]),
+        redirect_to store_index_url,
                     status: :see_other,
                     notice: 'Item was successfully removed from the cart.'
       end
