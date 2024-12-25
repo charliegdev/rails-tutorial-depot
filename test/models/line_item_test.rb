@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # == Schema Information
 #
 # Table name: line_items
@@ -20,7 +22,7 @@
 #  cart_id     (cart_id => carts.id)
 #  product_id  (product_id => products.id)
 #
-require "test_helper"
+require 'test_helper'
 
 class LineItemTest < ActiveSupport::TestCase
   # test "the truth" do
