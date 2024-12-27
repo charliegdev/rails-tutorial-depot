@@ -1,5 +1,5 @@
-<tr>
-  <td class="text-right"><%= line_item.quantity %></td>
+<tr class="<%= line_item == @current_item ? 'line-item-highlight' : '' %>">
+<td class="text-right"><%= line_item.quantity %></td>
   <td>&times;</td>
   <td class="pr-2">
     <%= line_item.product.title %>

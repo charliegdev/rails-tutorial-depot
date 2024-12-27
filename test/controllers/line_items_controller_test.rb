@@ -50,4 +50,19 @@ class LineItemsControllerTest < ActionDispatch::IntegrationTest
 
     assert_redirected_to store_index_url
   end
+
+  test 'should create line_item via turbo_stream' do
+    assert_difference('LineItem.count', 1) do
+      post(
+        line_items_url,
+        params: {
+          product_id: products(:ruby).id
+        },
+        as: :turbo_stream
+      )
+    end
+
+    assert_response :success
+    assert_match(/<tr class="line-item-highlight">/, @response.body)
+  end
 end
