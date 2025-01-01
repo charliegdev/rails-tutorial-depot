@@ -3,7 +3,7 @@
 # Line Item is individual items inside a cart.
 class LineItemsController < ApplicationController
   include CurrentCart
-  before_action :set_cart, only: %i[create]
+  before_action :set_cart, only: %i[create decrement]
   before_action :set_line_item, only: %i[show edit update destroy]
 
   # GET /line_items or /line_items.json
@@ -57,12 +57,26 @@ class LineItemsController < ApplicationController
     @line_item.destroy
 
     respond_to do |format|
+      # format.turbo_stream
       format.html do
         redirect_to store_index_url,
                     status: :see_other,
                     notice: 'Item was successfully removed from the cart.'
       end
       format.json { head :no_content }
+    end
+  end
+
+  def decrement
+    line_item = LineItem.find(params[:id])
+    line_item.quantity -= 1
+
+    if line_item.quantity.positive? && line_item.save
+      redirect_to store_index_url, notice: 'Item was decremented.'
+    elsif line_item.quantity.zero? && line_item.destroy
+      redirect_to store_index_url, notice: 'Item was deleted from your cart'
+    else
+      redirect_to store_index_url, notice: 'Item could not be decremented.'
     end
   end
 
