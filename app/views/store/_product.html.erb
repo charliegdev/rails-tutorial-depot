@@ -4,7 +4,7 @@
                 data: { turbo_method: :post},
                 class: 'object-contain w-40 h-48 shadow mr-6' do
     %>
-      <%= image_tag(product.image_url, class: 'object-contain w-40 h-48 shadow mr-6') %>
+      <%= image_tag(product.image_url, class: 'object-contain w-40 h-48 shadow mr-6', style: 'max-width: unset') %>
     <% end %>
     <div>
       <h2 class="font-bold text-lg mb-4"><%= product.title %></h2>
