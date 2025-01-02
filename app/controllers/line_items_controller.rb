@@ -71,6 +71,8 @@ class LineItemsController < ApplicationController
     line_item = LineItem.find(params[:id])
     line_item.quantity -= 1
 
+    @current_item = line_item
+
     if line_item.quantity.positive? && line_item.save
       respond_to do |format|
         format.turbo_stream
