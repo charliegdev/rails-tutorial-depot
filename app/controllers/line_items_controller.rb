@@ -72,9 +72,19 @@ class LineItemsController < ApplicationController
     line_item.quantity -= 1
 
     if line_item.quantity.positive? && line_item.save
-      redirect_to store_index_url, notice: 'Item was decremented.'
+      respond_to do |format|
+        format.turbo_stream
+        format.html do
+          redirect_to store_index_url, notice: 'Item was decremented.'
+        end
+      end
     elsif line_item.quantity.zero? && line_item.destroy
-      redirect_to store_index_url, notice: 'Item was deleted from your cart'
+      respond_to do |format|
+        format.turbo_stream
+        format.html do
+          redirect_to store_index_url, notice: 'Item was deleted from your cart'
+        end
+      end
     else
       redirect_to store_index_url, notice: 'Item could not be decremented.'
     end

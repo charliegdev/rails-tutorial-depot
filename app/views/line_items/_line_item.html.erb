@@ -8,6 +8,6 @@
     <%= number_to_currency(line_item.total_price) %>
   </td>
   <td>
-    <%= button_to "Delete", decrement_line_item_path(line_item.id), data: { confirm: 'Are you sure?' } %>
+    <%= button_to "Delete", decrement_line_item_path(line_item.id) %>
   </td>
 </tr>
