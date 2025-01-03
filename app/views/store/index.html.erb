@@ -11,7 +11,12 @@
     <% cache @products do %>
       <% @products.each do |product| %>
         <% cache product do %>
-          <%= render partial: 'product', object: product %>
+          <%= render partial: 'product',
+                     locals:{
+                       product: product,
+                       just_updated: false
+                     }
+          %>
         <% end %>
       <% end %>
     <% end %>
