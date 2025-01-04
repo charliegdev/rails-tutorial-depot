@@ -23,15 +23,15 @@
 
   <div class="my-5">
     <%= form.label :email %>
-    <%= form.text_field :email, class: "input-field" %>
+    <%= form.email_field :email, class: "input-field" %>
   </div>
 
   <div class="my-5">
     <%= form.label :pay_type %>
-    <%= form.number_field :pay_type, class: "input-field" %>
+    <%= form.select :pay_type, Order.pay_types.keys, { prompt: 'Select a payment method' }, class: "input-field" %>
   </div>
 
   <div class="inline">
-    <%= form.submit class: "input-field" %>
+    <%= form.submit class: "rounded-lg py-3 px-5 bg-green-200 text-black inline-block font-medium cursor-pointer" %>
   </div>
 <% end %>
