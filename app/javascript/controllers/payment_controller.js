@@ -11,7 +11,7 @@ export default class extends Controller {
   showAdditionalFields() {
     const selection = this.selectionTarget.value;
 
-    for (const fields of this.additionalFieldsTarget) {
+    for (const fields of this.additionalFieldsTargets) {
       const isSelected = fields.dataset.type === selection;
 
       fields.disabled = !isSelected;
