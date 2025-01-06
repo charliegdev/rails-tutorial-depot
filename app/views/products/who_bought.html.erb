@@ -1,0 +1,5 @@
+<h1>Who Bought <strong><%= @product.title %></strong>?</h1>
+
+<% @product.orders.each do |order| %>
+  <%= render order %>
+<% end %>

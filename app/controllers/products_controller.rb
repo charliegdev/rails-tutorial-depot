@@ -62,6 +62,14 @@ class ProductsController < ApplicationController
     end
   end
 
+  def who_bought
+    @product = Product.find(params[:id])
+    logger.debug('***************************************************************')
+    logger.debug(params[:id])
+    logger.debug(@product.orders)
+    logger.debug('***************************************************************')
+  end
+
   private
 
   # Use callbacks to share common setup or constraints between actions.
