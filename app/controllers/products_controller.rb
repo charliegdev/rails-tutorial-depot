@@ -64,10 +64,11 @@ class ProductsController < ApplicationController
 
   def who_bought
     @product = Product.find(params[:id])
-    logger.debug('***************************************************************')
-    logger.debug(params[:id])
-    logger.debug(@product.orders)
-    logger.debug('***************************************************************')
+
+    respond_to do |format|
+      format.html
+      format.json { render json: @product.to_json(include: :orders) }
+    end
   end
 
   private
