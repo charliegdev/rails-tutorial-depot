@@ -68,6 +68,7 @@ class ProductsController < ApplicationController
     respond_to do |format|
       format.html
       format.json { render json: @product.to_json(include: :orders) }
+      format.xml { render xml: @product.to_xml }
     end
   end
 
