@@ -12,3 +12,11 @@ Product.create!([
                   { title: 'Jarenel',
                     description: "In a city where secrets run deeper than the shadows, a lone figure emerges, haunted by a past they can't escape. As they navigate a treacherous underworld, they must confront their own demons and unravel a conspiracy that threatens to consume them all.", image_url: 'gemini-generated-2.jpeg', price: '35.99' }
                 ])
+
+PaymentType.create!(
+  [
+    { name: 'Check' },
+    { name: 'Credit Card' },
+    { name: 'Purchase Order' }
+  ]
+)
