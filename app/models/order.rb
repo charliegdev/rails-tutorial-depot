@@ -23,8 +23,11 @@ class Order < ApplicationRecord
   belongs_to :payment_type
 
   validates :name, :address, :email, presence: true
-  # TODO: Add back validation
-  # validates :pay_type, inclusion: pay_types.keys
+  validates :payment_type_id,
+            inclusion: {
+              in: PaymentType.pluck(:id),
+              message: 'must be a valid payment type'
+            }
 
   def add_line_items_from_cart(cart)
     cart.line_items.each do |item|

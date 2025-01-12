@@ -70,7 +70,26 @@ class OrdersController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def order_params
-    params.require(:order).permit(:name, :address, :email, :payment_type_id)
+    params.require(:order).permit(
+      # Basic order fields
+      :name,
+      :address,
+      :email,
+      :payment_type_id
+
+      # Will enable them later, once we get to the part where orders can take payment information.
+      # Now payment information is actually discarded and not saved to the database
+      # For payment order
+      # :po_number,
+      #
+      # # For credit cards
+      # :credit_card_number,
+      # :expiration_date,
+      #
+      # # For cheques
+      # :routing_number,
+      # :account_number
+    )
   end
 
   def ensure_cart_isnt_empty
