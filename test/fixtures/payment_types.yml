@@ -8,8 +8,15 @@
 #  updated_at :datetime         not null
 #
 
-one:
-  name: MyString
+"Check":
+  id: 1,
+  name: 'Check'
 
-two:
-  name: MyString
+"Credit Card":
+  id: 2
+  name: 'Credit Card'
+
+"Purchase Order":
+  id: 3,
+  name: 'Purchase Order'
+
