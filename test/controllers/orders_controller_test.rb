@@ -69,4 +69,16 @@ class OrdersControllerTest < ActionDispatch::IntegrationTest
 
     assert_redirected_to orders_url
   end
+
+  test 'invalid payment_type_id fails validation' do
+    order = Order.new(
+      name: 'Test User',
+      address: '123 Test St',
+      email: 'test@example.com',
+      payment_type_id: 999 # An invalid payment_type_id
+    )
+
+    assert_not order.valid?
+    assert_includes order.errors[:payment_type_id], 'must be a valid payment type'
+  end
 end
