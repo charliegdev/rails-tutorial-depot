@@ -2,13 +2,18 @@
 #
 # Table name: orders
 #
-#  id              :integer          not null, primary key
-#  address         :text
-#  email           :string
-#  name            :string
-#  created_at      :datetime         not null
-#  updated_at      :datetime         not null
-#  payment_type_id :integer
+#  id                 :integer          not null, primary key
+#  account_number     :string
+#  address            :text
+#  credit_card_number :string
+#  email              :string
+#  expiration_date    :string
+#  name               :string
+#  po_number          :string
+#  routing_number     :string
+#  created_at         :datetime         not null
+#  updated_at         :datetime         not null
+#  payment_type_id    :integer
 #
 # Indexes
 #
