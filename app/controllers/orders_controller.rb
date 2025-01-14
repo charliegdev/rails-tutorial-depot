@@ -75,20 +75,20 @@ class OrdersController < ApplicationController
       :name,
       :address,
       :email,
-      :payment_type_id
+      :payment_type_id,
 
-      # Will enable them later, once we get to the part where orders can take payment information.
-      # Now payment information is actually discarded and not saved to the database
+      # Even though payment types are moved to the database, which means they can be changed in the future,
+      # this code here assumes that'll never happen, and we're simply using hardcoded values.
       # For payment order
-      # :po_number,
-      #
-      # # For credit cards
-      # :credit_card_number,
-      # :expiration_date,
-      #
-      # # For cheques
-      # :routing_number,
-      # :account_number
+      :po_number,
+
+      # For credit cards
+      :credit_card_number,
+      :expiration_date,
+
+      # For cheques
+      :routing_number,
+      :account_number
     )
   end
 
